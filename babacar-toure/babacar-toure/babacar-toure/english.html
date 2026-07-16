@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Babacar Touré</title>
+<title>Carte de visite numérique</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -15,83 +16,139 @@ font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
+
 background:#eef3ef;
 display:flex;
 justify-content:center;
 align-items:center;
 min-height:100vh;
 padding:25px;
+
 }
 
 .card{
+
 width:100%;
 max-width:430px;
 background:#fff;
-border-radius:25px;
-padding:35px;
-box-shadow:0 10px 30px rgba(0,0,0,.12);
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.18);
+
 }
 
-.photo{
-width:120px;
-height:120px;
+.header{
+
+height:150px;
+background:linear-gradient(135deg,#0b6e4f,#178b64);
+
+display:flex;
+justify-content:center;
+align-items:flex-end;
+
+}
+
+.avatar{
+
+width:130px;
+height:130px;
+background:#ffffff;
 border-radius:50%;
-background:#2e7d32;
-margin:0 auto 25px;
+margin-bottom:-65px;
+
+border:6px solid #fff;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:18px;
+color:#999;
+
+font-weight:bold;
+
+}
+
+.content{
+
+padding:90px 30px 30px;
+
+text-align:center;
+
 }
 
 h1{
-font-size:34px;
-color:#111;
-text-align:center;
-margin-bottom:6px;
+
+font-size:28px;
+
+color:#0b6e4f;
+
+margin-bottom:8px;
+
 }
 
-h2{
-font-size:22px;
-font-weight:400;
-text-align:center;
-color:#555;
-margin-bottom:30px;
-}
+.position{
 
-.item{
-display:flex;
-align-items:flex-start;
-margin-bottom:18px;
 font-size:18px;
-line-height:1.5;
-}
 
-.icon{
-width:34px;
-margin-right:14px;
-font-size:24px;
-}
-
-a{
-color:#333;
-text-decoration:none;
-}
-
-.download{
-display:block;
-margin-top:35px;
-background:#2e7d32;
-color:white;
-padding:16px;
-text-align:center;
-border-radius:10px;
-font-weight:bold;
-font-size:18px;
-}
-
-.company{
-margin-top:35px;
-text-align:center;
 color:#666;
-font-size:18px;
+
+line-height:1.5;
+
+margin-bottom:30px;
+
 }
+
+.btn{
+
+display:block;
+
+width:100%;
+
+padding:16px;
+
+margin-bottom:15px;
+
+border-radius:12px;
+
+background:#0b6e4f;
+
+color:#fff;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#07563d;
+
+transform:translateY(-2px);
+
+}
+
+.footer{
+
+margin-top:35px;
+
+padding-top:20px;
+
+border-top:1px solid #ddd;
+
+font-size:14px;
+
+color:#666;
+
+line-height:1.7;
+
+}
+
 </style>
 
 </head>
@@ -100,54 +157,73 @@ font-size:18px;
 
 <div class="card">
 
-<div class="photo"></div>
+<div class="header">
 
-<h1>Babacar Touré</h1>
+<div class="avatar">
 
-<h2>Director General</h2>
+PHOTO
 
-<div class="item">
-<div class="icon">📞</div>
-<div><a href="tel:+221775296800">(+221) 77 529 68 00</a></div>
 </div>
 
-<div class="item">
-<div class="icon">✉️</div>
-<div><a href="mailto:btoure@minfinances.sn">btoure@minfinances.sn</a></div>
 </div>
 
-<div class="item">
-<div class="icon">🌐</div>
-<div>
-<a href="https://finances.gouv.sn/" target="_blank">
-https://finances.gouv.sn/
-</a>
-</div>
+<div class="content">
+
+<h1>
+
+Babacar TOURÉ
+
+</h1>
+
+<div class="position">
+
+Directeur Général
+
 </div>
 
-<div class="item">
-<div class="icon">📍</div>
-<div>
-<a href="https://maps.app.goo.gl/xa7dKMAQ75ioVixZ9" target="_blank">
-Rue René Ndiaye x Avenue Carde<br>
-BP 4017 Dakar, Senegal
-</a>
-</div>
-</div>
+<a class="btn" href="tel:+221775030929">
 
-<a class="download" href="contact.vcf">
-
-📇 Save Contact
+📞 Appeler
 
 </a>
 
-<div class="company">
+<a class="btn" href="mailto:btoure@minfinances.sn">
 
-<b>Ministry of Economy, Finance and Planning of Senegal</b>
+✉️ Envoyer un e-mail
+
+</a>
+
+<a class="btn" href="https://finances.gouv.sn/" target="_blank">
+
+🌐 Site officiel
+
+</a>
+
+<a class="btn" href="https://maps.app.goo.gl/xa7dKMAQ75ioVixZ9" target="_blank">
+
+📍 Localisation
+
+</a>
+
+<a class="btn" href="contact.vcf">
+
+💾 Enregistrer le contact
+
+</a>
+
+<div class="footer">
+
+<strong>
+
+Ministère de l'Économie, des Finances et du Plan du Sénégal
+
+</strong>
 
 <br><br>
 
-Directorate General of Financing and Debt
+DIRECTION GÉNÉRALE DES FINANCEMENTS ET DE LA DETTE
+
+</div>
 
 </div>
 

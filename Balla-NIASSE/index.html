@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Carte de visite numérique</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+
+background:#eef3ef;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:25px;
+
+}
+
+.card{
+
+width:100%;
+max-width:430px;
+background:#fff;
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.header{
+
+height:150px;
+background:linear-gradient(135deg,#0b6e4f,#178b64);
+
+display:flex;
+justify-content:center;
+align-items:flex-end;
+
+}
+
+.avatar{
+
+width:130px;
+    height:130px;
+    background:#ffffff;
+    border-radius:50%;
+    margin-bottom:-65px;
+    border:6px solid #fff;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+  .photo{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.content{
+
+padding:90px 30px 30px;
+
+text-align:center;
+
+}
+
+h1{
+
+font-size:28px;
+
+color:#0b6e4f;
+
+margin-bottom:8px;
+
+}
+
+.position{
+
+font-size:18px;
+
+color:#666;
+
+line-height:1.5;
+
+margin-bottom:30px;
+
+}
+
+.btn{
+
+display:block;
+
+width:100%;
+
+padding:16px;
+
+margin-bottom:15px;
+
+border-radius:12px;
+
+background:#0b6e4f;
+
+color:#fff;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#07563d;
+
+transform:translateY(-2px);
+
+}
+
+.footer{
+
+margin-top:35px;
+
+padding-top:20px;
+
+border-top:1px solid #ddd;
+
+font-size:14px;
+
+color:#666;
+
+line-height:1.7;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="header">
+
+<div class="avatar">
+
+<img src="image2.jpg" alt="carte-site" class="photo">
+
+</div>
+
+</div>
+
+<div class="content">
+
+<h1>
+
+M. Balla NIASSE
+
+</h1>
+
+<div class="position">
+
+Directeur de l'Audit et du Contôle Interne (DACI)
+  
+</div>
+
+<a class="btn" href="tel:+221773230776">
+
+📞 Appeler
+
+</a>
+
+<a class="btn" href="mailto:bniasse@minfinances.sn">
+
+✉️ Envoyer un e-mail
+
+</a>
+
+<a class="btn" href="https://finances.gouv.sn/" target="_blank">
+
+🌐 Site officiel
+
+</a>
+
+<a class="btn" href="https://maps.app.goo.gl/xa7dKMAQ75ioVixZ9" target="_blank">
+
+📍 Localisation
+
+</a>
+
+<a class="btn" href="contact.vcf">
+
+💾 Enregistrer le contact
+
+</a>
+
+<div class="footer">
+
+<strong>
+
+Ministère de l'Économie, des Finances et du Plan du Sénégal
+
+</strong>
+
+<br><br>
+
+DIRECTION GÉNÉRALE DES FINANCEMENTS ET DE LA DETTE
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
